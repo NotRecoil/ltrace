@@ -1,6 +1,13 @@
 #ifndef LTRACE_ELF_H
 #define LTRACE_ELF_H
-
+/*
+typedef __off64_t off64_t;
+#define __off64_t_defined
+*/
+#include "defs.h"
+#include "ltrace.h"
+#include <unistd.h>
+typedef size_t off64_t;
 #include <gelf.h>
 #include <stdlib.h>
 

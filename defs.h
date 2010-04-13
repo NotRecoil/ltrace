@@ -1,3 +1,5 @@
+#ifndef DEFS_H
+#define DEFS_H
 
 #ifndef DEFAULT_ALIGN
 #define DEFAULT_ALIGN 50	/* default alignment column for results */
@@ -15,4 +17,6 @@
 #define DEFAULT_ARRAYLEN  4	/* default maximum # array elements */
 #endif				/* (-A switch) */
 
-#define MAX_LIBRARIES 30
+#define MAX_LIBRARIES 50
+
+#endif

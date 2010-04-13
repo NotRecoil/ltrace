@@ -147,7 +147,7 @@ struct callstack_element {
 	struct timeval time_spent;
 };
 
-#define MAX_CALLDEPTH 64
+#define MAX_CALLDEPTH 256
 
 typedef enum Process_State Process_State;
 enum Process_State {

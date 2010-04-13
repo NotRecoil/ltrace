@@ -1,4 +1,5 @@
 # include "config.h"
+# include "elf.h"
 
 #include <endian.h>
 #include <errno.h>
@@ -572,6 +573,8 @@ read_elf(Process *proc) {
 		addr = sym.st_value;
 		if (!addr)
 			continue;
+
+  //add all the symbols
 
 		for (xptr = opt_x; xptr; xptr = xptr->next)
 			if (xptr->name && strcmp(xptr->name, name) == 0) {
